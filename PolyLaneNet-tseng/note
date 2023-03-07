@@ -1,0 +1,23 @@
+py train.py --exp_name tusimple --cfg resnet34.yaml
+
+
+py test.py --exp_name tusimple --cfg resnet34.yaml --epoch 200
+
+
+py params.py --exp_name tusimple --cfg resnet34.yaml
+Testing time: 5.7128
+[2022-03-20 21:32:34,198] [INFO] conf: 0.4308, lower: 0.0010, upper: 0.0076, poly: 4.4954, cls_loss: 0.0000
+[2022-03-20 21:32:34,198] [INFO] Mean test loss: 4.9349
+[2022-03-20 21:32:34,967] [INFO]   Accuracy        FP        FN      FPS
+----------  --------  --------  -------
+  0.842615  0.358845  0.295624  1229.24
+
+
+
+
+[2022-03-22 21:48:20,582] [INFO] Testing time: 4.2059
+[2022-03-22 21:48:20,583] [INFO] conf: 0.4402, lower: 0.0010, upper: 0.0101, poly: 6.3141, cls_loss: 0.0000
+[2022-03-22 21:48:20,584] [INFO] Mean test loss: 6.7653
+[2022-03-22 21:48:21,366] [INFO]   Accuracy       FP       FN      FPS
+----------  -------  -------  -------
+  0.792141  0.44013  0.39595  1199.66
